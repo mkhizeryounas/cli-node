@@ -1,0 +1,39 @@
+{
+  "name": "zigzag",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "mocha",
+    "test:watch": "mocha --watch",
+    "precommit-msg": "echo '🚀 Pre-commit checks...' && exit 0",
+    "lint": "eslint . --max-warnings=0 --report-unused-disable-directives && echo '✨ Linter passed!'",
+    "format": "pretty-quick --staged"
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "lint",
+    "format"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=14.16.1",
+    "npm": ">=8.3.0"
+  },
+  "dependencies": {
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.1",
+    "mocha": "^10.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.4.1",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-watch": "^8.0.0",
+    "nodemon": "^2.0.16",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.5.1",
+    "pretty-quick": "^3.1.2"
+  }
+}
