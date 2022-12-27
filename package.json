@@ -2,6 +2,7 @@
   "name": "zigzag",
   "version": "0.0.0",
   "private": true,
+  "path": "./src",
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
