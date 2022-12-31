@@ -1,3 +1,3 @@
 const logger = require('./utils/logger');
-
-logger.debug('Hello World');
+const { convertToNumber } = require('./utils/common');
+logger.debug('Hello World', convertToNumber('a'));

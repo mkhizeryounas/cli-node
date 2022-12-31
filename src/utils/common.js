@@ -1,7 +1,7 @@
-exports.convetToNumber = (num) => {
+exports.convertToNumber = (num) => {
   return +num;
 };
 
 exports.add = (a, b) => {
-  return exports.convetToNumber(a) + exports.convetToNumber(b);
+  return exports.convertToNumber(a) + exports.convertToNumber(b);
 };

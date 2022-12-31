@@ -1,8 +1,8 @@
 const { expect } = require('chai');
-const { add, convetToNumber } = require('../common');
+const { add, convertToNumber } = require('../common');
 
 describe('Common module', function () {
-  describe('add fn', function () {
+  describe('add', function () {
     it('Should add 2 numbers', () => {
       expect(add(1, 1)).to.eq(2);
     });
@@ -12,13 +12,13 @@ describe('Common module', function () {
     });
   });
 
-  describe('convetToNumber fn', function () {
+  describe('convertToNumber', function () {
     it('Should convert to number', () => {
-      expect(convetToNumber('1')).to.eq(1);
+      expect(convertToNumber('1')).to.eq(1);
     });
 
     it('Should convert to NaN', () => {
-      expect(convetToNumber('a')).to.be.NaN;
+      expect(convertToNumber('a')).to.be.NaN;
     });
   });
 });
